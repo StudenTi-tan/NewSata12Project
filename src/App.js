@@ -1,6 +1,6 @@
-import React,{ useState } from "react";
+import {Routes,Route,NavLink } from "react-router-dom";
 import Counter from "./pages/Counter.js";
-import Tools from ".pages/Todo";
+import Todo from "./pages/Todo.js";
 
 export default function App(){
     const linkStyle = ({ isActive }) => ({
@@ -15,11 +15,11 @@ export default function App(){
             {/*ナビゲーションメニュー */}
             <nav style={{ marginBottom:16}}>
                 <NavLink to="/" style={linkStyle} end>Counter</NavLink>
-                <NavLink to="/tools" style={linkStyle}>Todo</NavLink>     
+                <NavLink to="/Todo" style={linkStyle} end>Todo</NavLink>     
             </nav>
             <Routes>
                 <Route path="/"element={<Counter/>}/>
-                <Route path="/Todo"element={<Tools/>}/>
+                <Route path="/Todo"element={<Todo/>}/>
                 <Route path="*" element={<div>404 Not Found</div>} />    
             </Routes>
         
