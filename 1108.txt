@@ -1,5 +1,13 @@
-ReactDOMを利用してHTMLを描画する。
+npm startは事前に設定したpackage.jsonの
+"scripts":{
+	"start":" "react-scripts start",
+}
+で起動している。
 
+
+ReactDOMを利用してHTMLを描画する。
 
 BrawserRouterというライブラリでcount,todo アプリをapp.jsでルーティングをして画面切り替えを可能にした。
 
+
+App.jsで画面切り替えするためにナビゲーションー＞ルーティングの順で定義する。
