@@ -20,13 +20,14 @@ export default function MaterialDrower(){
     //ドロワーの開閉状態を管理するフック
     const [open,setOpen] = useState(false);
 
-    //開く、閉じるの処理を渡す
+    //開く、閉じるの処理
     const toggleDrawer = (isOpen) => () =>{
         setOpen(isOpen);
     };
 
     return(
         <>
+        <Typography variant="h4" gutterBottom>ドロワー</Typography>
         {/*Appbar */}
         <AppBar position="static">
             <Toolbar>
